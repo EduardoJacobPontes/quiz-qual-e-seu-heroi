@@ -1,24 +1,31 @@
-# Exercício — Aplicativo de Quiz com Múltiplas Activities
+📱 Projeto: Quiz de Personalidade - Qual é o seu Herói?
+Objetivo: Desenvolver um aplicativo Android nativo utilizando múltiplas Activities e navegação via Intents Explícitas.
 
-## Implemente um aplicativo Android que funcione como um pequeno quiz de preferências, utilizando múltiplas telas (Activities) e Intents explícitas.
+⚙️ Estrutura do Aplicativo
+O app é composto por 4 telas principais (Activities):
 
-O aplicativo deve conter 4 telas (Activities):
-- Activity 1: Pergunta 1
-- Activity 2: Pergunta 2
-- Activity 3: Pergunta 3
-- Activity 4: Tela de Resultado
+Telas 1, 2 e 3 (O Quiz):
 
-### Cada uma das três primeiras Activities deve apresentar:
-- Uma pergunta ao usuário;
-- Opções de resposta (por exemplo: botões ou RadioButtons);
-- Um botão "Próxima" para avançar para a próxima tela.
+Exibem perguntas de múltipla escolha para mapear o perfil do usuário (utilizando componentes como RadioGroup e RadioButton).
 
-### As respostas fornecidas pelo usuário ao longo das três perguntas devem ser utilizadas para determinar qual é o super-herói favorito do usuário, dentre as seguintes opções (podem ser outros heróis):
-- 🦇 Batman
-- 🕷️ Homem-Aranha
-- 🛡️ Capitão América
+Possuem um botão de ação para registrar a resposta e avançar para a próxima etapa.
 
-### A Activity de Resultado deve:
-- Receber as respostas das telas anteriores;
-- Processar essas respostas;
-- Exibir o nome do super-herói correspondente ao perfil do usuário.
+Tela 4 (Resultado):
+
+Recebe e processa os dados transmitidos pelas Activities anteriores via Intent.putExtra().
+
+Calcula a pontuação final e exibe o super-herói que mais combina com o jogador.
+
+🦸‍♂️ Resultados Possíveis
+Com base nas decisões tomadas durante o quiz, o usuário descobrirá com qual destes heróis tem mais afinidade:
+
+🔱 Aquaman
+
+⚡ Flash
+
+🏹 Arqueiro Verde
+
+🛠️ Requisitos Técnicos
+Uso de Intents Explícitas para a transição entre telas.
+
+Passagem de parâmetros entre Activities para acúmulo de pontuação.
