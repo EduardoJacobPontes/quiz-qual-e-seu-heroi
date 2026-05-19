@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tela_pergunta_aquaman"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaAquamanActivity">
+
+    <TextView
+        android:id="@+id/texto_pergunta_aquaman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="24dp"
+        android:paddingBottom="16dp"
+        android:text="Como você prefere começar um dia livre?"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/grupo_resposta_aquaman"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/texto_pergunta_aquaman">
+
+        <RadioButton
+            android:id="@+id/opcao_rotina_mar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ir para a praia ou para o mar logo cedo" />
+
+        <RadioButton
+            android:id="@+id/opcao_rotina_vibrante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resolver tudo correndo e sem perder tempo" />
+
+        <RadioButton
+            android:id="@+id/opcao_rotina_independente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Organizar meu próprio ritmo e seguir sozinho" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/botao_avancar_pergunta_um"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Avançar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/grupo_resposta_aquaman" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

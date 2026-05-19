@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tela_pergunta_arqueiro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaArqueiroActivity">
+
+    <TextView
+        android:id="@+id/texto_pergunta_arqueiro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="24dp"
+        android:text="Em um fim de semana ideal, o que faz mais sentido para você?"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/grupo_valores_pessoais"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/texto_pergunta_arqueiro">
+
+        <RadioButton
+            android:id="@+id/opcao_lealdade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Passar tempo com a família e com o grupo certo" />
+
+        <RadioButton
+            android:id="@+id/opcao_acao_imediata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sair para uma aventura sem planejar demais" />
+
+        <RadioButton
+            android:id="@+id/opcao_planejamento_silencioso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Organizar metas e revisar tudo com atenção" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/botao_ver_resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Ver resultado"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/grupo_valores_pessoais" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

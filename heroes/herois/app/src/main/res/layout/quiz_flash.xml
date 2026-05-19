@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tela_pergunta_flash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaFlashActivity">
+
+    <TextView
+        android:id="@+id/texto_pergunta_flash"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="24dp"
+        android:text="Quando a agenda aperta, qual atitude descreve melhor você?"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/grupo_decisao_rapida"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/texto_pergunta_flash">
+
+        <RadioButton
+            android:id="@+id/opcao_viver_em_ritmo_lento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eu desacelero e observo o cenário com calma" />
+
+        <RadioButton
+            android:id="@+id/opcao_viver_em_movimento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eu acelero o passo e resolvo tudo no impulso" />
+
+        <RadioButton
+            android:id="@+id/opcao_viver_estrategicamente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eu organizo a rota antes de agir" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/botao_avancar_pergunta_dois"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Avançar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/grupo_decisao_rapida" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
